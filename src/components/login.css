@@ -1,0 +1,45 @@
+
+.login{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    color: wheat;
+    height: max(50vh,320px);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+.lab{
+    display: flex;
+    width: min(90%,400px);
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    text-align: center;
+    min-height: 25px;
+    font-weight: bold;
+    width: 55%;
+    color: rgb(82, 82, 82);
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    input:focus{
+        outline: none;
+        border-bottom: 2px solid white;
+    }
+    
+.submit{
+    width: 140px;
+    height: 4vh;
+    min-height: 25px;
+    margin-top: 3.5vh;
+    border: none;
+    color: #263238;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: wheat;
+}
