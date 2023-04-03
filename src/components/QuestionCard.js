@@ -48,7 +48,7 @@ const QuestionCard = () => {
   }, [sem]);
 
   useEffect(()=>{
-    fetch("http://localhost:8000/questions").then((j)=>j.json()).then((j)=>setq(j[0].qu));
+    fetch("https://feedback-server-oj2d.onrender.com/questions").then((j)=>j.json()).then((j)=>setq(j[0].qu));
   },[]);
 
   const verify = () => {
@@ -59,7 +59,7 @@ const QuestionCard = () => {
 
   const endOfQuiz = async() => {
     try{
-    return await fetch("http://localhost:8000/"+sem, {
+    return await fetch("https://feedback-server-oj2d.onrender.com/"+sem, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({post:post, sem:sem}),
