@@ -91,7 +91,7 @@ const QuestionCard = () => {
           <h1 className="head">Login</h1>
           <div className="lab">
             <label>Sem : </label>
-            <input list="sem" type="text" className="sem" />
+            <input list="sem" type="text" className="sem" placeholder="sem"/>
             <datalist id="sem">
               <option value="3" />
               <option value="4" />
