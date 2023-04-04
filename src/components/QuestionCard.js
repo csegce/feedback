@@ -52,9 +52,10 @@ const QuestionCard = () => {
   },[]);
 
   const verify = () => {
-    if (document.getElementsByClassName("sem")[0].value.trim() != "") {
+    if (document.getElementsByClassName("sem")[0].value.trim() != "" && (Number(document.getElementsByClassName("sem")[0].value.trim()) in [3,4,5,6,7]))
       sets(Number(document.getElementsByClassName("sem")[0].value.trim()));
-    }
+    else
+      alert("select from the given semester options");
   };
 
   const endOfQuiz = async() => {
