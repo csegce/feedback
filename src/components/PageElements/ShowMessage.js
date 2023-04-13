@@ -6,8 +6,8 @@ const ShowMessage = ({ avg }) => {
       emoji : '🎉'}
    return (
       <>
-         <h1 className='emoji'>{message.emoji}</h1>
-         <h1>{message.text}</h1>
+         <h1 className='emoji' style={{"width":"100%","text-align":"center"}}>{message.emoji}</h1>
+         <h1 style={{"width":"100%","text-align":"center"}}>{message.text}</h1>
       </>
    )
 }
